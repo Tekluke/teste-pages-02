@@ -183,7 +183,7 @@ h4 {
 @media screen and (max-width: 1024px) {
   #dobra_1 {
     height: calc(100vh - 152px);
-    background-image: url("/DNA/src/images/heroMobile.png");
+    background-image: url("/src/images/heroMobile.png");
     background-position: -20rem -7rem;
   }
 
