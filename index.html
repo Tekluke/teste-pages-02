@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/cropped-1671049649215-180x180.jpeg"
+      type="image/x-icon"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Teste de DNA para Paternidade | LABSP</title>
+  </head>
+  <body>
+    <header>
+      <div id="infobar">
+        <div class="info">
+          <p class="number"><i class="fa-brands fa-whatsapp"></i><b>(85) 9 9629-8542</b></p>
+          <p class="number"><i class="fa-solid fa-phone"></i><b>(85) 3261-8820</b></p>
+          <p>
+            <i class="fa-regular fa-clock"></i
+            ><b>Segunda à Sexta: 06:30 às 17:00h - Sábado: 06:30 às 11:00h</b>
+          </p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/labspessoa/?_rdc=2&_rdr"
+            ><i class="fa-brands fa-facebook"></i></a
+          ><a href="https://www.instagram.com/labspessoa/"
+            ><i class="fa-brands fa-instagram"></i></a
+          ><a
+            href="https://www.linkedin.com/in/company/laborat%C3%B3riosamuelpessoa/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <nav id="navbar">
+        <a id="logo" href="https://labspessoa.com.br/">
+          <img src="src/images/logo.png" alt="logo laboratoriosamuel pessoa" />
+        </a>
+
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="https://labspessoa.com.br/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/institucional/">
+              Institucional</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#">Serviços</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/exames/">Exames</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/exames-moleculares/"
+              >Exames Moleculares</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/convenios/">Convênios</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/unidades/">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/contato/">Contato</a>
+          </li>
+        </ul>
+        <div id="header_btn">
+          <a
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+            "
+            href="https://api.whatsapp.com/send?phone=85996298542"
+            target="_blank"
+            class="btn-default"
+            ><i style="padding-bottom: 0.2rem" class="fa-regular fa-calendar-days"></i>AGENDAR EXAME</a
+          >
+        </div>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item active">
+            <a href="https://labspessoa.com.br/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/institucional/">
+              Institucional</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#">Serviços</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/exames/">Exames</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/exames-moleculares/"
+              >Exames Moleculares</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/convenios/">Convênios</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/unidades/">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://labspessoa.com.br/contato/">Contato</a>
+          </li>
+        </ul>
+
+        <div id="mobile_header_btn">
+          <a
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+            "
+            href="https://api.whatsapp.com/send?phone=85996298542"
+            target="_blank"
+            class="btn-default"
+            ><i style="padding-bottom: 0.2rem" class="fa-regular fa-calendar-days"></i>AGENDAR EXAME</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="botao_fixado">
+        <a
+          href="https://api.whatsapp.com/send?phone=85996298542&text=Olá,%20gostaria%20de%20saber%20mais%20sobre..."
+          target="_blank"
+          id="whatsapp-button"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <span class="wpp_frase">Precisa de Ajuda?</span>
+      </div>
+
+      <section id="dobra_1">
+        <div class="texto fadeL">
+          <h1 class="titulo">
+            Descubra a verdade com segurança e discrição – Teste de DNA para
+            paternidade.
+          </h1>
+          <h2 class="subtitulo">
+            Confiança, sigilo e resultados precisos para sua tranquilidade.
+          </h2>
+          <p class="descricao">
+            Testes de DNA para paternidade com precisão garantida e total
+            confidencialidade. Receba seus resultados com rapidez e segurança,
+            assegurando a verdade com o apoio de uma equipe especializada.
+          </p>
+
+          <div id="texto_btn">
+            <h3>Agende agora mesmo!</h3>
+            <h4 style="margin-bottom: 2rem">Em até 5x no cartão.</h4>
+            <div id="contato">
+              <a
+                href="https://api.whatsapp.com/send?phone=85996298542"
+                class="btn-default"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                Agendar pelo whatsapp
+              </a>
+              <h4>OU</h4>
+              <a href="tel:+558532618820" class="btn-default" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                Agendar por ligação.
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero fadeL">
+          <img src="src/images/hero.png" alt="" />
+        </div>
+      </section>
+      <div class="divisoria">
+        <img src="src/images/divwave.svg" alt="" />
+      </div>
+      <section id="dobra_2">
+        <div class="hero fadeR">
+          <img src="src/images/DNA.jpg" alt="" />
+        </div>
+
+        <div class="texto fadeR">
+          <h2 class="titulo">
+            Por que fazer o teste de DNA no laboratório Samuel Pessoa?
+          </h2>
+          <ul class="descricao">
+            <li>
+              <i class="fa-solid fa-person-running"></i>
+              <b>Rapidez:</b> Resultados em tempo recorde, sem comprometer a
+              qualidade.
+            </li>
+            <li>
+              <i class="fa-solid fa-handshake"></i>
+              <b>Confiança:</b> Mais de 50 anos de tradição em exames
+              laboratoriais.
+            </li>
+            <li>
+              <i class="fa-solid fa-face-meh-blank"></i>
+              <b>Sigilo:</b> Privacidade total, desde a coleta até a entrega dos
+              resultados.
+            </li>
+            <li>
+              <i class="fa-solid fa-bullseye"></i>
+              <b>Acurácia:</b> Utilizamos as mais recentes tecnologias para
+              garantir a precisão dos resultados.
+            </li>
+          </ul>
+
+          <h2 class="subtitulo">
+            Benefícios do teste de DNA com o laboratório Samuel Pessoa.
+          </h2>
+          <ul class="descricao">
+            <li>
+              <i class="fa-solid fa-user-lock"></i>
+              <b>Confidencialidade absoluta:</b> Seus dados são tratados com o
+              máximo sigilo e segurança.
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <b>Resultados rápidos e precisos:</b> Tecnologia avançada para
+              garantir a acuracidade do exame.
+            </li>
+            <li>
+              <i class="fa-solid fa-headset"></i>
+              <b>Apoio profissional: </b> Equipe especializada disponível para
+              orientar em cada etapa do processo.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="divisoria">
+        <img
+          style="transform: scaleX(-1)"
+          src="src/images/divwave.svg"
+          alt=""
+        />
+      </div>
+      <section id="dobra_3">
+        <div class="texto fadeL">
+          <h2 class="titulo">
+            O Laboratório Samuel Pessoa é referência a mais de 50 anos em exames
+            de alta qualidade, com tecnologia avançada e equipe especializada.
+          </h2>
+          <p class="descricao">
+            Fundado em 1968, nosso Laboratório tem uma cultura organizacional
+            que preza pela qualidade técnica, custo acessível e compromisso
+            profissional, oferecendo um atendimento humanizado e eficiente.
+          </p>
+          <div id="texto-btn">
+            <h3 style="margin-bottom: 2rem; text-align: center">
+              Não perca tempo!
+            </h3>
+            <a
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+              "
+              href="https://api.whatsapp.com/send?phone=85996298542"
+              target="_blank"
+              class="btn-default"
+              ><i style="padding-bottom: 0.2rem" class="fa-regular fa-calendar-days"></i>AGENDAR EXAME</a
+            >
+          </div>
+        </div>
+        <div class="hero fadeL">
+          <img src="src/images/Laboratorio-Samuel.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="src/images/wave.svg" alt="" />
+
+      <div id="footer_items">
+          <div id="social_footer">
+            <a href="https://www.facebook.com/labspessoa/?_rdc=2&_rdr"
+              ><i class="fa-brands fa-facebook"></i></a
+            ><a href="https://www.instagram.com/labspessoa/"
+              ><i class="fa-brands fa-instagram"></i></a
+            ><a
+              href="https://www.linkedin.com/in/company/laborat%C3%B3riosamuelpessoa/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p>Laboratório Samuel Pessoa  &copy 2024</p>
+        </div>
+    </footer>
+  </body>
+  <script src="src/javascript/script.js"></script>
+</html>

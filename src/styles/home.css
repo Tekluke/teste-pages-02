@@ -1,0 +1,317 @@
+#dobra_1 {
+  height: calc(100vh - 183px);
+}
+
+#dobra_2,
+#dobra_3 {
+  height: 100vh;
+}
+
+#dobra_1,
+#dobra_2,
+#dobra_3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.texto {
+  width: 45%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  color: var(--color-primary-1);
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  color: #caa464;
+  text-align: center;
+}
+
+.descricao {
+  list-style: none;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+
+.descricao i {
+  font-size: 3rem;
+  color: var(--color-primary-1);
+  padding-right: 1rem;
+}
+
+.descricao b {
+  color: var(--color-primary-1);
+}
+
+h3,
+h4 {
+  color: var(--color-primary-2);
+}
+
+#texto_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#texto_btn a {
+  height: 5rem;
+  width: 26rem;
+  color: var(--color-primary-2);
+}
+
+#texto_btn a:hover {
+  background-color: var(--color-neutral-1);
+  color: var(--color-neutral-0);
+}
+
+#texto_btn .fa-whatsapp {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+
+#texto_btn .fa-phone {
+  padding-right: 0.2rem;
+  font-size: 2.5rem;
+}
+
+#contato {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: 20% 2% 20% 2%;
+}
+
+.fadeR img {
+  border-radius: 2% 20% 2% 20%;
+}
+
+#dobra_1 .subtitulo {
+  color: var(--color-neutral-0);
+  background-color: var(--color-primary-1);
+  border-radius: 1.2rem;
+}
+
+#dobra_2 {
+  gap: 2rem;
+}
+
+#dobra_2 .titulo {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  background-color: var(--color-primary-1);
+  color: var(--color-neutral-0);
+  border-radius: 1.2rem;
+}
+
+#dobra_2 .subtitulo {
+  font-size: 3rem;
+}
+
+#dobra_3 .texto,
+#dobra_3 .titulo {
+  text-align: start;
+}
+
+@media screen and (max-width: 1440px) {
+  #dobra_1 {
+    height: calc(100vh - 156px);
+  }
+
+  .texto {
+    gap: 1rem;
+  }
+
+  .titulo {
+    font-size: 2.3rem;
+  }
+
+  .subtitulo {
+    font-size: 1.6rem;
+  }
+  .descricao {
+    font-size: 1.4rem;
+  }
+
+  .descricao i {
+    font-size: 2.5rem;
+  }
+
+  #dobra_2 .subtitulo {
+    font-size: 2rem;
+  }
+
+  #texto_btn a {
+    width: 22rem;
+    font-size: 1.4rem;
+  }
+  #texto_btn .fa-whatsapp,
+  #texto_btn .fa-phone {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #dobra_1 {
+    height: calc(100vh - 152px);
+    background-image: url("/DNA/src/images/heroMobile.png");
+    background-position: -20rem -7rem;
+  }
+
+  #dobra_2,
+  #dobra_3 {
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  #dobra_3 {
+    flex-direction: column-reverse;
+  }
+
+  #dobra_1 .titulo {
+    color: var(--color-neutral-0);
+  }
+
+  #dobra_1 .descricao, #texto_btn h4 {
+    font-size: 1.8rem;
+    color: var(--color-neutral-0);
+  }
+
+  #dobra_1 .hero {
+    display: none;
+  }
+
+  #dobra_2 .titulo,
+  .titulo {
+    font-size: 4rem;
+  }
+
+  #dobra_2 .subtitulo,
+  .subtitulo, #texto_btn h3,
+  #dobra_3 h3 {
+    font-size: 2.3rem;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .texto {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .descricao {
+    font-size: 2rem;
+  }
+
+  .descricao i {
+    font-size: 2.5rem;
+  }
+
+  #texto_btn h3,
+  h4 {
+    color: var(--color-neutral-0);
+  }
+
+  #texto_btn a {
+    width: 30rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #texto_btn .fa-whatsapp,
+  #texto_btn .fa-phone {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #dobra_1 {
+    background-position: center;
+    background-size: cover;
+  }
+
+  #dobra_2 .hero {
+    display: none;
+  }
+
+  #dobra_2,
+  #dobra_3 {
+    gap: 4rem;
+  }
+
+  #dobra_1 .descricao, #texto_btn h4 {
+    font-size: 1.2rem;
+  }
+
+  #dobra_2 .titulo,
+  #dobra_3 .titulo, .titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #dobra_2 .subtitulo,
+  .subtitulo, #texto_btn h3,
+  #dobra_3 h3 {
+    font-size: 1.6rem;
+  }
+
+  #dobra_2 .descricao, .descricao{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .texto {
+    gap: 1rem;
+  }
+
+  .descricao i {
+    font-size: 2rem;
+  }
+
+  #texto_btn a {
+    width: 25rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  #texto_btn .fa-whatsapp,
+  #texto_btn .fa-phone {
+    font-size: 2.5rem;
+  }
+
+  #contato {
+    flex-direction: column;
+  }
+}

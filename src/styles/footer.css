@@ -1,0 +1,36 @@
+footer {
+  background-color: var(--color-primary-1);
+  color: #caa464;
+  font-weight: 500;
+}
+
+#footer_items {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8% 2.4rem 8%;
+  align-items: start;
+  justify-content: start;
+}
+
+#social_footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+}
+
+#social_footer a {
+  color: #caa464;
+  transition: transform 0.3s ease-in-out;
+}
+
+#social_footer a:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  #footer_items {
+    align-items: center;
+    justify-content: center;
+  }
+}
