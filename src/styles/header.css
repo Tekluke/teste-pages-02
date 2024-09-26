@@ -4,7 +4,7 @@ header {
   z-index: 3;
 
   width: 100%;
-  padding: 2.8rem 8%;
+  padding: 1.5rem 8%;
 
   background-color: var(--color-neutral-0);
 }
@@ -97,14 +97,6 @@ header {
   color: var(--color-neutral-0);
 }
 
-#mobile_btn {
-  display: none;
-}
-
-#mobile_menu {
-  display: none;
-}
-
 @media screen and (max-width: 1440px) {
   #infobar {
     font-size: 1.4rem;
@@ -136,92 +128,7 @@ header {
 }
 
 @media screen and (max-width: 1210px) {
-  #infobar {
-    font-size: 1.6rem;
-    justify-content: space-between;
-  }
-  .number {
+  header {
     display: none;
-  }
-  .info i,
-  .social i {
-    font-size: 1.8rem;
-  }
-
-  #nav_list,
-  #header_btn {
-    display: none;
-  }
-
-  #mobile_btn {
-    display: block;
-    border: none;
-    background: var(--color-primary-3);
-    font-size: 1.8rem;
-    margin-right: 1rem;
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-  }
-
-  #mobile_menu.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-primary-1);
-    border-radius: 1.2rem;
-    padding: 1rem;
-    margin-top: 0.2rem;
-  }
-
-  #mobile_nav_list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin: 1.2rem 0;
-  }
-
-  #mobile_nav_list a {
-    color: var(--color-neutral-0);
-  }
-
-  #mobile_nav_list .nav-item {
-    list-style: none;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-
-  #mobile_header_btn a {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #infobar {
-    font-size: 0.9rem;
-    justify-content: center;
-  }
-
-  #infobar .social {
-    display: none;
-  }
-
-  .info i {
-    font-size: 1.3rem; 
-    margin-left: 0rem;
-  }
-
-  #mobile_btn {
-    font-size: 1.6rem;
-    padding: 0.3rem 1rem;
-  }
-
-  #mobile_nav_list .nav-item {
-    font-size: 1.4rem;
-  }
-
-  #mobile_header_btn a {
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
   }
 }

@@ -1,5 +1,5 @@
 #dobra_1 {
-  height: calc(100vh - 183px);
+  height: calc(100vh - 158px);
 }
 
 #dobra_2,
@@ -141,6 +141,10 @@ h4 {
   text-align: start;
 }
 
+#logo_mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
   #dobra_1 {
     height: calc(100vh - 156px);
@@ -182,14 +186,36 @@ h4 {
 
 @media screen and (max-width: 1024px) {
   #dobra_1 {
-    height: calc(100vh - 152px);
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     background-image: url("../images/heroMobile.png");
-    background-position: -20rem -7rem;
+    background-position: -3rem -7rem;
+  }
+
+  #logo_mobile {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    width: 60%;
+  }
+
+  #logo_mobile img {
+    width: 100%;
   }
 
   #dobra_2,
   #dobra_3 {
     height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  #dobra_2,
+  #dobra_3 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -229,6 +255,7 @@ h4 {
   }
 
   .texto {
+    margin-top: 8rem;
     width: 100%;
     gap: 1.5rem;
   }
@@ -285,7 +312,7 @@ h4 {
   #dobra_2 .subtitulo,
   .subtitulo, #texto_btn h3,
   #dobra_3 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   #dobra_2 .descricao, .descricao{
@@ -294,7 +321,7 @@ h4 {
   }
 
   .texto {
-    gap: 1rem;
+    gap: 1.6rem;
   }
 
   .descricao i {
@@ -306,9 +333,12 @@ h4 {
     font-size: 1.6rem;
     text-align: center;
   }
-  #texto_btn .fa-whatsapp,
-  #texto_btn .fa-phone {
+  #texto_btn .fa-whatsapp {
     font-size: 2.5rem;
+  }
+
+  #texto_btn .fa-phone {
+    font-size: 2rem;
   }
 
   #contato {
