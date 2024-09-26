@@ -185,12 +185,16 @@ h4 {
 
 @media screen and (max-width: 1024px) {
   #dobra_1 {
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
     background-image: url("../images/heroMobile.png");
-    background-position: -3rem -7rem;
+    background-position: -7rem 0;
+  }
+
+  #dobra_1,
+  #dobra_2,
+  #dobra_3 {
+    flex-direction: column;
+    justify-content: center;
   }
 
   #logo_mobile {
@@ -207,8 +211,6 @@ h4 {
   #dobra_2,
   #dobra_3 {
     height: 100%;
-    flex-direction: column;
-    justify-content: center;
     gap: 6rem;
   }
 
