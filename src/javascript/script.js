@@ -8,7 +8,7 @@ function handleAnimations() {
     const revealConfig = {
       duration: 2000,
       reset: true,
-      origin: window.innerWidth <= 768 ? 'bottom' : (element.classList.contains('fadeL') ? 'left' : 'right'),
+      origin: window.innerWidth <= 1200 ? 'bottom' : (element.classList.contains('fadeL') ? 'left' : 'right'),
       distance: '20%'
     };
 
