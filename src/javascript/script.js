@@ -2,27 +2,20 @@
 function handleAnimations() {
   const elements = document.querySelectorAll('.fadeL, .fadeR');
 
+  ScrollReveal().clean(); // Limpa animações anteriores
+
   elements.forEach(element => {
     const revealConfig = {
       duration: 2000,
       reset: true,
+      origin: window.innerWidth <= 768 ? 'bottom' : (element.classList.contains('fadeL') ? 'left' : 'right'),
+      distance: '20%'
     };
 
-    if (window.innerWidth <= 768) {
-      // Para telas menores ou iguais a 768px
-      revealConfig.origin = 'bottom';
-      revealConfig.distance = '15%';
-    } else {
-      // Para telas maiores que 768px
-      if (element.classList.contains('fadeL')) {
-        revealConfig.origin = 'left';
-      } else {
-        revealConfig.origin = 'right';
-      }
-      revealConfig.distance = '20%';
-    }
-
-    ScrollReveal().reveal(element, revealConfig);
+    // Utilizando requestAnimationFrame para garantir a atualização
+    requestAnimationFrame(() => {
+      ScrollReveal().reveal(element, revealConfig);
+    });
   });
 }
 
