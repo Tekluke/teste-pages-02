@@ -19,7 +19,7 @@ function handleAnimations() {
   });
 }
 
-// Chamar a função quando a página carregar e sempre que o tamanho da janela mudar
+// Chamar a função quando a página carregar
 window.onload = handleAnimations;
 
 // Garante que a página role para o topo após todos os recursos serem carregados
