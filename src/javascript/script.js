@@ -5,12 +5,13 @@ function handleAnimations() {
   elements.forEach(element => {
     const revealConfig = {
       duration: 2000,
+      reset: true,
     };
 
     if (window.innerWidth <= 768) {
       // Para telas menores ou iguais a 768px
       revealConfig.origin = 'bottom';
-      revealConfig.distance = '20%';
+      revealConfig.distance = '15%';
     } else {
       // Para telas maiores que 768px
       if (element.classList.contains('fadeL')) {
