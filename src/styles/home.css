@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .texto {
@@ -209,15 +208,6 @@ h4 {
   #dobra_3 {
     height: 100%;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 6rem;
-  }
-
-  #dobra_2,
-  #dobra_3 {
-    flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     gap: 6rem;
   }
@@ -278,9 +268,13 @@ h4 {
     font-size: 2rem;
     text-align: center;
   }
-  #texto_btn .fa-whatsapp,
-  #texto_btn .fa-phone {
+
+  #texto_btn .fa-whatsapp {
     font-size: 2.5rem;
+  }
+
+  #texto_btn .fa-phone {
+    font-size: 2rem;
   }
 }
 
@@ -332,13 +326,6 @@ h4 {
     width: 25rem;
     font-size: 1.6rem;
     text-align: center;
-  }
-  #texto_btn .fa-whatsapp {
-    font-size: 2.5rem;
-  }
-
-  #texto_btn .fa-phone {
-    font-size: 2rem;
   }
 
   #contato {
