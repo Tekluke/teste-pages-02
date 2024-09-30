@@ -36,6 +36,9 @@
 }
 
 .descricao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   list-style: none;
   text-align: justify;
   font-size: 1.8rem;
@@ -146,7 +149,7 @@ h4 {
   }
 
   .texto {
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .titulo {
