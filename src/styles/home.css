@@ -185,7 +185,7 @@ h4 {
 @media screen and (max-width: 1024px) {
   #dobra_1 {
     height: 100vh;
-    background-image: url("../images/heroMobile.png");
+    background-image: url("../images/heroMobile.webp");
     background-position: -7rem 0;
   }
 
